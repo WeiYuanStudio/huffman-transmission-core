@@ -4,11 +4,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class HuffmanBinaryMsgDecoder {
-    private Map<String, Character> reverseCharDict = new HashMap<>(); //K:01哈夫曼，V:字符 反转字典
+    private Map<String, Character> reverseCharDict; //K:01哈夫曼，V:字符 反转字典
     private String binaryContent; //String格式哈夫曼01代码
     private StringBuilder messageContent = new StringBuilder(); //存放解码完毕的消息
 
     public HuffmanBinaryMsgDecoder(Map<Character, String> charDict, String binaryContent) {
+        this.reverseCharDict = new HashMap<>();
         charDict.forEach((key, value) -> this.reverseCharDict.put(value, key)); //哈夫曼字典键值反转
         this.binaryContent = binaryContent;
     }
@@ -23,8 +24,8 @@ public class HuffmanBinaryMsgDecoder {
         binaryContent.chars().forEach(_char -> {
             huffmanBuffer.append((char) _char); //逐位添加哈夫曼01代码
             if (reverseCharDict.get(huffmanBuffer.toString()) != null) { //是否找到了哈夫曼01代码对应的字符
-                messageContent.append(reverseCharDict.get(huffmanBuffer.toString())); //将该字符存放
-                huffmanBuffer.delete(0, huffmanBuffer.length()); //清空暂存
+                messageContent.append(reverseCharDict.get(huffmanBuffer.toString())); //将解码出的字符存放
+                huffmanBuffer.delete(0, huffmanBuffer.length()); //清空二进制编码暂存
             }
         });
         return messageContent.toString();
