@@ -25,5 +25,5 @@
 第二字段0002表明该消息为哈夫曼编码后的消息数据
 
 ```text
-|0001|0002|24bit hash|16bit length|huffman binary data
+|0001|0010|24bit hash|16bit length|huffman binary data
 ```
