@@ -1,4 +1,4 @@
-package SocketUtil;
+package SocketUtil.Binary;
 
 /**
  * 将字节数组转换成二进制String

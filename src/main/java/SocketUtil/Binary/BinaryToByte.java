@@ -1,4 +1,4 @@
-package SocketUtil;
+package SocketUtil.Binary;
 
 import java.nio.ByteBuffer;
 
