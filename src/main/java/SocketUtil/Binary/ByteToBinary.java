@@ -7,6 +7,11 @@ public class ByteToBinary {
     private byte[] huffmanByte; //哈夫曼数据
     private int binaryCodeLength; //二进制数据长度
 
+    public ByteToBinary(byte[] huffmanByte) {
+        this.huffmanByte = huffmanByte;
+        this.binaryCodeLength = huffmanByte.length * 8;
+    }
+
     /**
      * 构造
      *
