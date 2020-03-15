@@ -77,8 +77,7 @@ public class MessageListener extends Thread {
 
                     int contentBinaryCodeLen = Integer.parseInt(new ByteToBinary(dataLengthByte).getBinary(), 2); //二进制哈夫曼编码长度
 
-                    String contentString = new ByteToBinary(dataByte, contentBinaryCodeLen).getBinary(); //二进制哈夫曼编码
-                    System.out.println(contentString); //Todo test
+                    String contentString = new ByteToBinary(dataByte, contentBinaryCodeLen).getBinary(); //从字节解码二进制哈夫曼编码
                 } else {
                     /*No such protocol*/
                     logger.info("Protocol not found");

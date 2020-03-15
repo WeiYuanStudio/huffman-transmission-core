@@ -15,15 +15,22 @@
 第二字段0001表明该消息为字典数据
 
 ```text
-0001|0001|24bit hash|huffman dict json String java to byte
+|0001|0001|24bit hash|huffman dict json String java to byte
 ```
+
+字典头总共32bit
+
 
 ### 传送消息
 
 通过该格式，传送消息
 
-第二字段0002表明该消息为哈夫曼编码后的消息数据
+第二字段0010(BIN)表明该消息为哈夫曼编码后的消息数据
 
 ```text
 |0001|0010|24bit hash|16bit length|huffman binary data
 ```
+
+消息头总共48bit
+
+‭00010010 11111111 11111111 11111111 00000000 00000010‬ 11000000
