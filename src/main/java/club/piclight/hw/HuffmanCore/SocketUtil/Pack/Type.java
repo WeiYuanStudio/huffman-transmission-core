@@ -1,4 +1,4 @@
-package SocketUtil.Pack;
+package club.piclight.hw.HuffmanCore.SocketUtil.Pack;
 
 /**
  * 协议类型

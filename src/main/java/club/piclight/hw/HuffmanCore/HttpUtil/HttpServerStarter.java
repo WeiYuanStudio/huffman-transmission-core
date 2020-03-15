@@ -1,4 +1,4 @@
-package HttpUtil;
+package club.piclight.hw.HuffmanCore.HttpUtil;
 
 import java.util.logging.Logger;
 

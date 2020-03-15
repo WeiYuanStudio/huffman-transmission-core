@@ -1,18 +1,9 @@
-import DB.DBAccess;
-import HuffmanUtil.DictBuilder;
-import HuffmanUtil.HuffmanBinaryMsgBuilder;
-import HuffmanUtil.HuffmanBinaryMsgDecoder;
-import Json.DictDecoder;
-import Json.DictFormatter;
-import Json.DictModel;
-import SocketUtil.Binary.BinaryToByte;
-import SocketUtil.Binary.ByteToBinary;
-import SocketUtil.MessageListener;
-import SocketUtil.Pack.MessagePacker;
-import SocketUtil.Pack.Type;
+package club.piclight.hw.HuffmanCore;
 
-import java.io.*;
-import java.net.ServerSocket;
+import club.piclight.hw.HuffmanCore.Json.DictModel;
+import club.piclight.hw.HuffmanCore.Json.DictDecoder;
+import club.piclight.hw.HuffmanCore.Json.DictFormatter;
+
 import java.util.HashMap;
 import java.util.Map;
 

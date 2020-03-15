@@ -1,6 +1,6 @@
-package SocketUtil.Pack;
+package club.piclight.hw.HuffmanCore.SocketUtil.Pack;
 
-import SocketUtil.Binary.BinaryToByte;
+import club.piclight.hw.HuffmanCore.SocketUtil.Binary.BinaryToByte;
 
 import java.util.ArrayList;
 import java.util.List;

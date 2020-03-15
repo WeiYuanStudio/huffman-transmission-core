@@ -1,4 +1,4 @@
-package DB;
+package club.piclight.hw.HuffmanCore.DB;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

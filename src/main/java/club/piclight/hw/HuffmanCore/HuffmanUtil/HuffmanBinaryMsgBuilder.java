@@ -1,4 +1,4 @@
-package HuffmanUtil;
+package club.piclight.hw.HuffmanCore.HuffmanUtil;
 
 import java.util.Map;
 

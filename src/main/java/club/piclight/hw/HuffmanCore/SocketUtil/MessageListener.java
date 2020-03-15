@@ -1,7 +1,6 @@
-package SocketUtil;
+package club.piclight.hw.HuffmanCore.SocketUtil;
 
-import SocketUtil.Binary.BinaryToByte;
-import SocketUtil.Binary.ByteToBinary;
+import club.piclight.hw.HuffmanCore.SocketUtil.Binary.ByteToBinary;
 
 import java.io.*;
 import java.net.ServerSocket;

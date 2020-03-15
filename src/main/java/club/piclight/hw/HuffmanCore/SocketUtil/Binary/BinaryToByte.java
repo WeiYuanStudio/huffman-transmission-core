@@ -1,6 +1,5 @@
-package SocketUtil.Binary;
+package club.piclight.hw.HuffmanCore.SocketUtil.Binary;
 
-import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
 

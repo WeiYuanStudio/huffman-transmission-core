@@ -1,4 +1,4 @@
-package DB;
+package club.piclight.hw.HuffmanCore.DB;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -15,7 +15,7 @@ public class DBConnector {
         try {
             connection = DriverManager.getConnection(url);
             connection.setAutoCommit(false);
-            logger.info("DB init success, get connection success");
+            logger.info("club.piclight.hw.DB init success, get connection success");
         } catch (SQLException e) {
             e.printStackTrace();
         }

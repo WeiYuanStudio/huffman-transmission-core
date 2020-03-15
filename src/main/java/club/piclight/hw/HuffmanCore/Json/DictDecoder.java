@@ -1,4 +1,4 @@
-package Json;
+package club.piclight.hw.HuffmanCore.Json;
 
 import com.google.gson.Gson;
 
