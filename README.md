@@ -1,3 +1,5 @@
+**注意：项目已经重构使用Spring boot框架，请移步至[huffman-transmission-core-spring](https://github.com/WeiYuanStudio/huffman-transmission-core-spring)，该仓库冻结存档**
+
 # Huffman Trasmission Core
 
 哈夫曼编码实现P2P模式通讯
